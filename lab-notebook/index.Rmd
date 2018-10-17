@@ -7,8 +7,8 @@ date: "`r Sys.Date()`"
 output:
   bookdown::pdf_book:
     keep_tex: yes
-url: '`https\://www.vjd.github.io/adpkd/'
-github-repo: vjd/adpkd
+url: '`https\://www.vjd.github.io/ncaspecs/'
+github-repo: vjd/ncaspecs
 colorlinks: yes
 lot: yes
 lof: yes

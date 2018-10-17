@@ -1,14 +1,14 @@
 --- 
 knit: "bookdown::render_book"
 title: "NCA Specifications"
-author: "Bill Denny"
+author: "Seth Berry, William Denney, Jan Huisman, Klaas Prins, Peter Schaefer"
 description: "Specifications standards for a NCA toolkit"
 date: "2018-10-17"
 output:
   bookdown::pdf_book:
     keep_tex: yes
-url: '`https\://www.vjd.github.io/adpkd/'
-github-repo: vjd/adpkd
+url: '`https\://www.vjd.github.io/ncaspecs/'
+github-repo: vjd/ncaspecs
 colorlinks: yes
 lot: yes
 lof: yes
