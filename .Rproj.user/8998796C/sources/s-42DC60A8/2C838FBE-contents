@@ -1,1 +1,1 @@
-This book contains the NCA toolkit specification documents drafted by @billdenney on behalf of the [NCA Consortium](https://github.com/NCAConsortium/Qualification-Requirements). The documents have not been changed, but a more convenient bookdown interface has been created. Contributions are welcome. 
+This book contains the NCA toolkit specification documents drafted by the [NCA Consortium](https://github.com/NCAConsortium/Qualification-Requirements). The documents have not been changed, but a more convenient bookdown interface has been created. Contributions are welcome. 

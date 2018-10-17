@@ -1,7 +1,7 @@
 --- 
 knit: "bookdown::render_book"
 title: "NCA Specifications"
-author: "Bill Denny"
+author: "Seth Berry, William Denney, Jan Huisman, Klaas Prins, Peter Schaefer"
 description: "Specifications standards for a NCA toolkit"
 date: "`r Sys.Date()`"
 output:
