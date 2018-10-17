@@ -263,7 +263,7 @@ The following parameter definitions are used throughout the parameter table, and
 
   $V_{ss,obs}$, $V_{ss,pred}$            volume           The volume of distribution at             VSSO, VSSP              TRUE     FALSE        TRUE           FALSE                         $$CL \times MRT$$                              [28][$V_{ss,obs}$,           (, 2013)  
                                                             steady state based on the                                                                                                      $$\frac{F \times D \times                            $V_{ss,pred}$]                       
-                                                            equivalent for a substance                                                                                                          AUMC}{{AUC}^2}$$                                                                     
+                                                            equivalent for a substance                                                                                                         AUMC}{{AUC}}^2}$$                                                                     
                                                           administered by intravascular                                                                                                                                                                                              
                                                                      dosing.                                                                                                                                                                                                         
 
