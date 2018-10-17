@@ -4,7 +4,8 @@ delete_merged_file: true
 language:
   ui:
     chapter_name: "Chapter "
-rmd_files: ["01-Outline_and_Scope.Rmd", 
+rmd_files: ["index.Rmd",
+            "01-Outline_and_Scope.Rmd", 
             "02-Input_and_Output_Data.Rmd",
             "03-NCA_Equations.Rmd",
             "04-Test_Cases.Rmd",
