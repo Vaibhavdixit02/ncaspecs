@@ -1,1 +1,1 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "Get Started" at https://bookdown.org/ for how to compile this example.
+This book contains the NCA toolkit specification documents drafted by @billdenney on behalf of the [NCA Consortium](https://github.com/NCAConsortium/Qualification-Requirements). The documents have not been changed, but a more convenient bookdown interface has been created. Contributions are welcome. 
