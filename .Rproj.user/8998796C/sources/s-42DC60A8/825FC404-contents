@@ -658,7 +658,7 @@ addparam(symbol=c("$V_{ss,obs}$",
          iv=TRUE,
          po=FALSE,
          equation=c("CL \\times MRT",
-                    "\\frac{F \\times D \\times AUMC}{{AUC}}^2}"),
+                    "\\frac{F \\times D \\times AUMC}{AUC^2}"),
          notes="SDTM parameters are specific to intravascular dosing.  For each of the symbols, select the equivalent $AUMC$ and $AUC$.  When extravascular dosing is used, it is referred to as the observed or apparent volume of distribution at steady-state.  CL and MRT may be given either for single dosing with $AUC_{0,\\infty}$ or steady-state with $AUC_{0,\\tau}$.",
          reference=agah)
 

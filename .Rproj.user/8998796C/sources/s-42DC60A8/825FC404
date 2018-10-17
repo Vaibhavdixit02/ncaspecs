@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "759948383",
+    "hash" : "747487954",
     "id" : "825FC404",
-    "lastKnownWriteTime" : 1539790281,
-    "last_content_update" : 1539790281288,
+    "lastKnownWriteTime" : 1539790884,
+    "last_content_update" : 1539790884072,
     "path" : "~/Repos/pharmsci/ncaspecs/lab-notebook/03-NCA_Equations.Rmd",
     "project_path" : "lab-notebook/03-NCA_Equations.Rmd",
     "properties" : {
-        "cursorPosition" : "660,60",
+        "cursorPosition" : "660,54",
         "scrollLine" : "634"
     },
     "read_only" : false,
