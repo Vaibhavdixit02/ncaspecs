@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539789659275.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3790115070",
+    "id" : "2740239",
+    "lastKnownWriteTime" : 1539789683,
+    "last_content_update" : 1539789683795,
+    "path" : "~/Repos/pharmsci/ncaspecs/lab-notebook/05-Time_and_Concentration_Deviations.Rmd",
+    "project_path" : "lab-notebook/05-Time_and_Concentration_Deviations.Rmd",
+    "properties" : {
+        "cursorPosition" : "75,2",
+        "scrollLine" : "45"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

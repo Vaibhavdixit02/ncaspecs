@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539789686118.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3435555629",
+    "id" : "D7F241ED",
+    "lastKnownWriteTime" : 1539292044,
+    "last_content_update" : 1539292044,
+    "path" : "~/Repos/pharmsci/ncaspecs/lab-notebook/06-Time_and_Concentration_Deviation_Examples.Rmd",
+    "project_path" : "lab-notebook/06-Time_and_Concentration_Deviation_Examples.Rmd",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

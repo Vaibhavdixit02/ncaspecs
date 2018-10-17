@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ncaspecs.utf8.md</title>
+  <meta name="description" content="">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="ncaspecs.utf8.md" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="ncaspecs.utf8.md" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="input-data.html">
+<link rel="next" href="test-cases.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="css/adpkd.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">NCA Specification</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#scope"><i class="fa fa-check"></i><b>1.1</b> Scope</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#out-of-scope"><i class="fa fa-check"></i><b>1.2</b> Out of scope</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="input-data.html"><a href="input-data.html"><i class="fa fa-check"></i><b>2</b> Input Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="input-data.html"><a href="input-data.html#sdtm-alignment"><i class="fa fa-check"></i><b>2.1</b> SDTM Alignment</a></li>
+<li class="chapter" data-level="2.2" data-path="input-data.html"><a href="input-data.html#output-data"><i class="fa fa-check"></i><b>2.2</b> Output Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="equations.html"><a href="equations.html"><i class="fa fa-check"></i><b>3</b> Equations</a><ul>
+<li class="chapter" data-level="3.1" data-path="equations.html"><a href="equations.html#defined-parameters"><i class="fa fa-check"></i><b>3.1</b> Defined Parameters</a></li>
+<li class="chapter" data-level="3.2" data-path="equations.html"><a href="equations.html#parameter-table"><i class="fa fa-check"></i><b>3.2</b> Parameter Table</a></li>
+<li class="chapter" data-level="3.3" data-path="equations.html"><a href="equations.html#notes"><i class="fa fa-check"></i><b>3.3</b> Notes</a></li>
+<li class="chapter" data-level="3.4" data-path="equations.html"><a href="equations.html#c_min"><i class="fa fa-check"></i><b>3.4</b> <span class="math inline">\(C_{min}\)</span></a></li>
+<li class="chapter" data-level="3.5" data-path="equations.html"><a href="equations.html#c_trough"><i class="fa fa-check"></i><b>3.5</b> <span class="math inline">\(C_{trough}\)</span></a></li>
+<li class="chapter" data-level="3.6" data-path="equations.html"><a href="equations.html#c_lastpred"><i class="fa fa-check"></i><b>3.6</b> <span class="math inline">\(C_{last,pred}\)</span></a></li>
+<li class="chapter" data-level="3.7" data-path="equations.html"><a href="equations.html#auc_0t-auc_last-auc_tau"><i class="fa fa-check"></i><b>3.7</b> <span class="math inline">\(AUC_{0,t}\)</span>, <span class="math inline">\(AUC_{last}\)</span>, <span class="math inline">\(AUC_{\tau}\)</span></a></li>
+<li class="chapter" data-level="3.8" data-path="equations.html"><a href="equations.html#auc_t_last-inftypred-auc_t_last-inftyobs"><i class="fa fa-check"></i><b>3.8</b> <span class="math inline">\(AUC_{t_{last}-\infty,pred}\)</span>, <span class="math inline">\(AUC_{t_{last}-\infty,obs}\)</span></a></li>
+<li class="chapter" data-level="3.9" data-path="equations.html"><a href="equations.html#auc_t_last-inftyall"><i class="fa fa-check"></i><b>3.9</b> <span class="math inline">\(AUC_{t_{last}-\infty,all}\)</span></a></li>
+<li class="chapter" data-level="3.10" data-path="equations.html"><a href="equations.html#auc_0-inftypred-auc_0-inftyobs"><i class="fa fa-check"></i><b>3.10</b> <span class="math inline">\(AUC_{0-\infty,pred}\)</span>, <span class="math inline">\(AUC_{0-\infty,obs}\)</span></a></li>
+<li class="chapter" data-level="3.11" data-path="equations.html"><a href="equations.html#auc_0all"><i class="fa fa-check"></i><b>3.11</b> <span class="math inline">\(AUC_{0,all}\)</span></a></li>
+<li class="chapter" data-level="3.12" data-path="equations.html"><a href="equations.html#auc_extrapobs-auc_extrappred"><i class="fa fa-check"></i><b>3.12</b> <span class="math inline">\(AUC_{\%extrap,obs}\)</span>, <span class="math inline">\(AUC_{\%extrap,pred}\)</span></a></li>
+<li class="chapter" data-level="3.13" data-path="equations.html"><a href="equations.html#f"><i class="fa fa-check"></i><b>3.13</b> <span class="math inline">\(F\)</span></a></li>
+<li class="chapter" data-level="3.14" data-path="equations.html"><a href="equations.html#aumc_0t-aumc_last-aumc_tau"><i class="fa fa-check"></i><b>3.14</b> <span class="math inline">\(AUMC_{0,t}\)</span>, <span class="math inline">\(AUMC_{last}\)</span>, <span class="math inline">\(AUMC_{\tau}\)</span></a></li>
+<li class="chapter" data-level="3.15" data-path="equations.html"><a href="equations.html#aumc_t_last-inftyobs-aumc_t_last-inftypred"><i class="fa fa-check"></i><b>3.15</b> <span class="math inline">\(AUMC_{t_{last}-\infty,obs}\)</span>, <span class="math inline">\(AUMC_{t_{last}-\infty,pred}\)</span></a></li>
+<li class="chapter" data-level="3.16" data-path="equations.html"><a href="equations.html#aumc_t_last-inftyall"><i class="fa fa-check"></i><b>3.16</b> <span class="math inline">\(AUMC_{t_{last}-\infty,all}\)</span></a></li>
+<li class="chapter" data-level="3.17" data-path="equations.html"><a href="equations.html#aumc_0-inftyobs-aumc_0-inftypred"><i class="fa fa-check"></i><b>3.17</b> <span class="math inline">\(AUMC_{0-\infty,obs}\)</span>, <span class="math inline">\(AUMC_{0-\infty,pred}\)</span></a></li>
+<li class="chapter" data-level="3.18" data-path="equations.html"><a href="equations.html#aumc_0all"><i class="fa fa-check"></i><b>3.18</b> <span class="math inline">\(AUMC_{0,all}\)</span></a></li>
+<li class="chapter" data-level="3.19" data-path="equations.html"><a href="equations.html#aumc_extrapobs-aumc_extrappred"><i class="fa fa-check"></i><b>3.19</b> <span class="math inline">\(AUMC_{\%extrap,obs}\)</span>, <span class="math inline">\(AUMC_{\%extrap,pred}\)</span></a></li>
+<li class="chapter" data-level="3.20" data-path="equations.html"><a href="equations.html#lambda_z"><i class="fa fa-check"></i><b>3.20</b> <span class="math inline">\(\lambda_z\)</span></a></li>
+<li class="chapter" data-level="3.21" data-path="equations.html"><a href="equations.html#n_lambda_z"><i class="fa fa-check"></i><b>3.21</b> <span class="math inline">\(N_{\lambda_z}\)</span></a></li>
+<li class="chapter" data-level="3.22" data-path="equations.html"><a href="equations.html#r2"><i class="fa fa-check"></i><b>3.22</b> <span class="math inline">\(r^2\)</span></a></li>
+<li class="chapter" data-level="3.23" data-path="equations.html"><a href="equations.html#r2_adj"><i class="fa fa-check"></i><b>3.23</b> <span class="math inline">\(r^2_{adj}\)</span></a></li>
+<li class="chapter" data-level="3.24" data-path="equations.html"><a href="equations.html#mrt_evlast-mrt_evinftyobs-mrt_evinftypred-mrt_ivlast-mrt_ivinftyobs-mrt_ivinftypred"><i class="fa fa-check"></i><b>3.24</b> <span class="math inline">\(MRT_{ev,last}\)</span>, <span class="math inline">\(MRT_{ev,\infty,obs}\)</span>, <span class="math inline">\(MRT_{ev,\infty,pred}\)</span>, <span class="math inline">\(MRT_{iv,last}\)</span>, <span class="math inline">\(MRT_{iv,\infty,obs}\)</span>, <span class="math inline">\(MRT_{iv,\infty,pred}\)</span></a></li>
+<li class="chapter" data-level="3.25" data-path="equations.html"><a href="equations.html#mat_last-mat_inftyobs-mat_inftypred"><i class="fa fa-check"></i><b>3.25</b> <span class="math inline">\(MAT_{last}\)</span>, <span class="math inline">\(MAT_{\infty,obs}\)</span>, <span class="math inline">\(MAT_{\infty,pred}\)</span></a></li>
+<li class="chapter" data-level="3.26" data-path="equations.html"><a href="equations.html#r_aauc"><i class="fa fa-check"></i><b>3.26</b> <span class="math inline">\(R_{A,AUC}\)</span></a></li>
+<li class="chapter" data-level="3.27" data-path="equations.html"><a href="equations.html#r_ac_max"><i class="fa fa-check"></i><b>3.27</b> <span class="math inline">\(R_{A,C_{max}}\)</span></a></li>
+<li class="chapter" data-level="3.28" data-path="equations.html"><a href="equations.html#r_ac_min"><i class="fa fa-check"></i><b>3.28</b> <span class="math inline">\(R_{A,C_{min}}\)</span></a></li>
+<li class="chapter" data-level="3.29" data-path="equations.html"><a href="equations.html#r_ac_trough"><i class="fa fa-check"></i><b>3.29</b> <span class="math inline">\(R_{A,C_{trough}}\)</span></a></li>
+<li class="chapter" data-level="3.30" data-path="equations.html"><a href="equations.html#cl_evobs-cl_evpred-cl_evtau-cl_ivobs-cl_ivpred-cl_ivtau"><i class="fa fa-check"></i><b>3.30</b> <span class="math inline">\(CL_{ev,obs}\)</span>, <span class="math inline">\(CL_{ev,pred}\)</span>, <span class="math inline">\(CL_{ev,\tau}\)</span>, <span class="math inline">\(CL_{iv,obs}\)</span>, <span class="math inline">\(CL_{iv,pred}\)</span>, <span class="math inline">\(CL_{iv,\tau}\)</span></a></li>
+<li class="chapter" data-level="3.31" data-path="equations.html"><a href="equations.html#v_ssobs-v_sspred"><i class="fa fa-check"></i><b>3.31</b> <span class="math inline">\(V_{ss,obs}\)</span>, <span class="math inline">\(V_{ss,pred}\)</span></a></li>
+<li class="chapter" data-level="3.32" data-path="equations.html"><a href="equations.html#c_0"><i class="fa fa-check"></i><b>3.32</b> <span class="math inline">\(C_0\)</span></a></li>
+<li class="chapter" data-level="3.33" data-path="equations.html"><a href="equations.html#auc_backextrapobs-auc_backextrappred"><i class="fa fa-check"></i><b>3.33</b> <span class="math inline">\(AUC_{\%backextrap,obs}\)</span>, <span class="math inline">\(AUC_{\%backextrap,pred}\)</span></a></li>
+<li class="chapter" data-level="3.34" data-path="equations.html"><a href="equations.html#references"><i class="fa fa-check"></i><b>3.34</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="test-cases.html"><a href="test-cases.html"><i class="fa fa-check"></i><b>4</b> Test Cases</a><ul>
+<li class="chapter" data-level="4.1" data-path="test-cases.html"><a href="test-cases.html#introduction-1"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="test-cases.html"><a href="test-cases.html#examples"><i class="fa fa-check"></i><b>4.2</b> Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="deviations.html"><a href="deviations.html"><i class="fa fa-check"></i><b>5</b> Deviations</a><ul>
+<li class="chapter" data-level="5.1" data-path="deviations.html"><a href="deviations.html#introduction-2"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
+<li class="chapter" data-level="5.2" data-path="deviations.html"><a href="deviations.html#limit-of-quantification-modifications"><i class="fa fa-check"></i><b>5.2</b> Limit of Quantification Modifications</a></li>
+<li class="chapter" data-level="5.3" data-path="deviations.html"><a href="deviations.html#time-deviation-correction-rules"><i class="fa fa-check"></i><b>5.3</b> Time Deviation Correction Rules</a></li>
+<li class="chapter" data-level="5.4" data-path="deviations.html"><a href="deviations.html#concentration-deviation-correction-rules"><i class="fa fa-check"></i><b>5.4</b> Concentration Deviation Correction Rules</a></li>
+<li class="chapter" data-level="5.5" data-path="deviations.html"><a href="deviations.html#interpolation"><i class="fa fa-check"></i><b>5.5</b> Interpolation</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="deviations.html"><a href="deviations.html#zero-interpolation"><i class="fa fa-check"></i><b>5.5.1</b> Zero Interpolation</a></li>
+<li class="chapter" data-level="5.5.2" data-path="deviations.html"><a href="deviations.html#linear-interpolation"><i class="fa fa-check"></i><b>5.5.2</b> Linear Interpolation</a></li>
+<li class="chapter" data-level="5.5.3" data-path="deviations.html"><a href="deviations.html#log-linear-interpolation"><i class="fa fa-check"></i><b>5.5.3</b> Log-Linear Interpolation</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="deviations.html"><a href="deviations.html#extrapolation"><i class="fa fa-check"></i><b>5.6</b> Extrapolation</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="deviation-examples.html"><a href="deviation-examples.html"><i class="fa fa-check"></i><b>6</b> Deviation Examples</a></li>
+<li class="chapter" data-level="7" data-path="sdt.html"><a href="sdt.html"><i class="fa fa-check"></i><b>7</b> SDT</a><ul>
+<li class="chapter" data-level="7.1" data-path="sdt.html"><a href="sdt.html#sdt-1"><i class="fa fa-check"></i><b>7.1</b> SDT-1</a></li>
+<li class="chapter" data-level="7.2" data-path="sdt.html"><a href="sdt.html#sdt-2"><i class="fa fa-check"></i><b>7.2</b> SDT-2</a></li>
+<li class="chapter" data-level="7.3" data-path="sdt.html"><a href="sdt.html#sdt-3"><i class="fa fa-check"></i><b>7.3</b> SDT-3</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="mdt.html"><a href="mdt.html"><i class="fa fa-check"></i><b>8</b> MDT</a><ul>
+<li class="chapter" data-level="8.1" data-path="mdt.html"><a href="mdt.html#mdt-1"><i class="fa fa-check"></i><b>8.1</b> MDT-1</a></li>
+<li class="chapter" data-level="8.2" data-path="mdt.html"><a href="mdt.html#mdt-2"><i class="fa fa-check"></i><b>8.2</b> MDT-2</a></li>
+<li class="chapter" data-level="8.3" data-path="mdt.html"><a href="mdt.html#mdt-3"><i class="fa fa-check"></i><b>8.3</b> MDT-3</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="sdc.html"><a href="sdc.html"><i class="fa fa-check"></i><b>9</b> SDC</a><ul>
+<li class="chapter" data-level="9.1" data-path="sdc.html"><a href="sdc.html#sdc-1"><i class="fa fa-check"></i><b>9.1</b> SDC-1</a></li>
+<li class="chapter" data-level="9.2" data-path="sdc.html"><a href="sdc.html#sdc-2"><i class="fa fa-check"></i><b>9.2</b> SDC-2</a></li>
+<li class="chapter" data-level="9.3" data-path="sdc.html"><a href="sdc.html#sdc-3"><i class="fa fa-check"></i><b>9.3</b> SDC-3</a></li>
+<li class="chapter" data-level="9.4" data-path="sdc.html"><a href="sdc.html#sdc-4a"><i class="fa fa-check"></i><b>9.4</b> SDC-4a</a></li>
+<li class="chapter" data-level="9.5" data-path="sdc.html"><a href="sdc.html#sdc-4b"><i class="fa fa-check"></i><b>9.5</b> SDC-4b</a></li>
+<li class="chapter" data-level="9.6" data-path="sdc.html"><a href="sdc.html#sdc-4c"><i class="fa fa-check"></i><b>9.6</b> SDC-4c</a></li>
+<li class="chapter" data-level="9.7" data-path="sdc.html"><a href="sdc.html#sdc-4d"><i class="fa fa-check"></i><b>9.7</b> SDC-4d</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="mdc.html"><a href="mdc.html"><i class="fa fa-check"></i><b>10</b> MDC</a><ul>
+<li class="chapter" data-level="10.1" data-path="mdc.html"><a href="mdc.html#mdc-1"><i class="fa fa-check"></i><b>10.1</b> MDC-1</a></li>
+<li class="chapter" data-level="10.2" data-path="mdc.html"><a href="mdc.html#mdc-2"><i class="fa fa-check"></i><b>10.2</b> MDC-2</a></li>
+<li class="chapter" data-level="10.3" data-path="mdc.html"><a href="mdc.html#mdc-3"><i class="fa fa-check"></i><b>10.3</b> MDC-3</a></li>
+<li class="chapter" data-level="10.4" data-path="mdc.html"><a href="mdc.html#mdc-4a"><i class="fa fa-check"></i><b>10.4</b> MDC-4a</a></li>
+<li class="chapter" data-level="10.5" data-path="mdc.html"><a href="mdc.html#mdc-4b"><i class="fa fa-check"></i><b>10.5</b> MDC-4b</a></li>
+<li class="chapter" data-level="10.6" data-path="mdc.html"><a href="mdc.html#mdc-4c"><i class="fa fa-check"></i><b>10.6</b> MDC-4c</a></li>
+<li class="chapter" data-level="10.7" data-path="mdc.html"><a href="mdc.html#mdc-4d"><i class="fa fa-check"></i><b>10.7</b> MDC-4d</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="session-information.html"><a href="session-information.html"><i class="fa fa-check"></i><b>11</b> Session Information</a></li>
+<li class="divider"></li>
+<li><a href="https://vjd.github.io/ncaspecs/" target="blank">NCA Specification</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="equations" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Equations</h1>
+<p>For the parameter table below, concentrations measured below the limit of concentration are assumed to be written as zero. Also, mathematical terminology differs in many references; throughout this document, <span class="math inline">\(ln\)</span> is used to indicate the natural logarithm (also known as the logarithm base <span class="math inline">\(e\)</span>, <span class="math inline">\(log_e\)</span>, and <span class="math inline">\({}^elog\)</span>).</p>
+<div id="defined-parameters" class="section level2">
+<h2><span class="header-section-number">3.1</span> Defined Parameters</h2>
+<p>The following parameter definitions are used throughout the parameter table, and these parameters are defined parameter (not calculated).</p>
+<table style="width:60%;">
+<colgroup>
+<col width="12%" />
+<col width="22%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Symbol</th>
+<th align="center">Units</th>
+<th align="center">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">C</td>
+<td align="center">concentration</td>
+<td align="center">Concentration</td>
+</tr>
+<tr class="even">
+<td align="center">D</td>
+<td align="center">amount</td>
+<td align="center">Dose</td>
+</tr>
+<tr class="odd">
+<td align="center">t</td>
+<td align="center">time</td>
+<td align="center">Time</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\tau\)</span></td>
+<td align="center">time</td>
+<td align="center">Dosing interval</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="parameter-table" class="section level2">
+<h2><span class="header-section-number">3.2</span> Parameter Table</h2>
+<table>
+<colgroup>
+<col width="11%" />
+<col width="8%" />
+<col width="11%" />
+<col width="11%" />
+<col width="3%" />
+<col width="3%" />
+<col width="5%" />
+<col width="5%" />
+<col width="20%" />
+<col width="13%" />
+<col width="4%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">symbol</th>
+<th align="center">units</th>
+<th align="center">definition</th>
+<th align="center">cdisc</th>
+<th align="center">single</th>
+<th align="center">multiple</th>
+<th align="center">intravenous</th>
+<th align="center">extravascular</th>
+<th align="center">equation</th>
+<th align="center">notes</th>
+<th align="center">reference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(C_{max}\)</span></td>
+<td align="center">concentration</td>
+<td align="center">The maximum concentration
+occurring at <span class="math inline">\(t_{max}\)</span>.</td>
+<td align="center">CMAX</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">Observed</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(t_{max}\)</span></td>
+<td align="center">time</td>
+<td align="center">The time of <span class="math inline">\(C_{max}\)</span>.</td>
+<td align="center">TMAX</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">Observed</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(C_{min}\)</span></td>
+<td align="center">concentration</td>
+<td align="center">The minimum concentration
+occurring between dose time
+and dose time plus <span class="math inline">\(\tau\)</span> (at
+<span class="math inline">\(t_{min}\)</span>).</td>
+<td align="center">CMIN</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">Observed</td>
+<td align="center"><a href="equations.html#c_min">1</a></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(t_{min}\)</span></td>
+<td align="center">time</td>
+<td align="center">The time of <span class="math inline">\(C_{min}\)</span>.</td>
+<td align="center">TMIN</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">Observed</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(C_{trough}\)</span></td>
+<td align="center">concentration</td>
+<td align="center">Concentration at end of dosing
+interval.</td>
+<td align="center">CTROUGH</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">Observed</td>
+<td align="center"><a href="equations.html#c_trough">2</a></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(t_{lag}\)</span></td>
+<td align="center">time</td>
+<td align="center">The time prior to the first
+increase in concentration.</td>
+<td align="center">TLAG</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">Observed</td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(C_{last,obs}\)</span></td>
+<td align="center">concentration</td>
+<td align="center">The last observed
+concentration above the limit
+of quantification.
+Equivalently, the
+concentration corresponding to
+<span class="math inline">\(t_{last}\)</span>.</td>
+<td align="center">CLST</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">Observed</td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(C_{last,pred}\)</span></td>
+<td align="center">concentration</td>
+<td align="center">The concentration at
+<span class="math inline">\(t_{last}\)</span> predicted from the
+log-linear regression of the
+terminal part of the
+concentration-time curve (as
+estimated for half-life).</td>
+<td align="center"></td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[C_{last,pred} = \lambda_z
+\times t_{last} + A\]</span></td>
+<td align="center"><a href="equations.html#c_lastpred">3</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(t_{last}\)</span></td>
+<td align="center">time</td>
+<td align="center">The time of the last
+measurable (positive)
+concentration.</td>
+<td align="center">TLST</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">Observed</td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(AUC_{a,b,linear}\)</span></td>
+<td align="center">concentration*time</td>
+<td align="center">Area under the concentration
+time curve from measurement at
+time <span class="math inline">\(a\)</span> to time <span class="math inline">\(b\)</span> using the
+linear trapezoidal rule.</td>
+<td align="center"></td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[AUC_{t_i,t_{i+1}} =
+\frac{1}{2} \left(C_i +
+C_{i+1}\right) \left(t_{i+1} -
+t_i\right)\]</span></td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(AUC_{a,b,log-linear}\)</span></td>
+<td align="center">concentration*time</td>
+<td align="center">Area under the concentration
+time curve from measurement at
+time <span class="math inline">\(a\)</span> to time <span class="math inline">\(b\)</span> using the
+log-linear trapezoidal rule.</td>
+<td align="center"></td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[AUC_{t_i,t_{i+1}} =
+\frac{\left(C_i -
+C_{i+1}\right) \left(t_{i+1} -
+t_i\right)}{ln{C_i} -
+ln{C_{i+1}}}\]</span></td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(AUC_{0,t}\)</span>, <span class="math inline">\(AUC_{last}\)</span>,
+<span class="math inline">\(AUC_{\tau}\)</span></td>
+<td align="center">concentration*time</td>
+<td align="center">Area under the concentration
+time curve during a defined
+interval using only samples
+above the limit of
+quantification</td>
+<td align="center">AUCINT, AUCLST, AUCTAU</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[AUC =
+\sum_{t=a}^{t=min(t_{last},
+b)} AUC_{t_i,t_{i+1}}\]</span></td>
+<td align="center"><a href="equations.html#auc_0t-auc_last-auc_tau">4</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(AUC_{t_{last}-\infty,pred}\)</span>,
+<span class="math inline">\(AUC_{t_{last}-\infty,obs}\)</span></td>
+<td align="center">concentration*time</td>
+<td align="center">Area under the
+concentration-time curve from
+<span class="math inline">\(t_{last}\)</span> to <span class="math inline">\(\infty\)</span></td>
+<td align="center"></td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[\frac{C_{last}}{\lambda_z}\]</span></td>
+<td align="center"><a href="equations.html#auc_t_last-inftypred-auc_t_last-inftyobs">5</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(AUC_{t_{last}-\infty,all}\)</span></td>
+<td align="center">concentration*time</td>
+<td align="center">Area under the
+concentration-time curve from
+<span class="math inline">\(t_{last}\)</span> to <span class="math inline">\(\infty\)</span> as used
+for <span class="math inline">\(AUC_{all}\)</span>.</td>
+<td align="center"></td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[AUC_{t_{last},t_{last+1},linear}\]</span></td>
+<td align="center"><a href="equations.html#auc_t_last-inftyall">6</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(AUC_{0-\infty,pred}\)</span>,
+<span class="math inline">\(AUC_{0-\infty,obs}\)</span></td>
+<td align="center">concentration*time</td>
+<td align="center">The area under the curve (AUC)
+extrapolated to <span class="math inline">\(\infty\)</span>,
+calculated using the observed
+or predicted value of the last
+non-zero concentration.</td>
+<td align="center">AUCIFP, AUCIFO</td>
+<td align="center">TRUE</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[AUC_{last} +
+AUC_{t_{last}-\infty}\]</span></td>
+<td align="center"><a href="equations.html#auc_0-inftypred-auc_0-inftyobs">7</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(AUC_{0,all}\)</span></td>
+<td align="center">concentration*time</td>
+<td align="center">The area under the curve (AUC)
+from the time of dosing to the
+time of the last observation,
+regardless of whether the last
+concentration is measurable or
+not.</td>
+<td align="center">AUCALL</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[AUC_{last} +
+AUC_{t_{last}-\infty,all}\]</span></td>
+<td align="center"><a href="equations.html#auc_0all">8</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(AUC_{\%extrap,obs}\)</span>,
+<span class="math inline">\(AUC_{\%extrap,pred}\)</span></td>
+<td align="center">%</td>
+<td align="center">The area under the curve (AUC)
+from the last observed
+non-zero concentration value
+to infinity as a percentage of
+the area under the curve
+extrapolated to infinity using
+either the observed or
+predicted <span class="math inline">\(C_{last}\)</span>.</td>
+<td align="center">AUCPEO, AUCPEP</td>
+<td align="center">TRUE</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[\frac{AUC_{t_{last},\infty}}{AUC_{0,\infty}}
+\times
+100\]</span></td>
+<td align="center"><a href="equations.html#auc_extrapobs-auc_extrappred">9</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(F\)</span></td>
+<td align="center">fraction</td>
+<td align="center">Bioavailability</td>
+<td align="center"></td>
+<td align="center">TRUE</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[\frac{AUC_{0,\infty,ev}}{AUC_{0,\infty,iv}}
+\frac{D_{iv}}{D_{ev}}\]</span>
+<span class="math display">\[\frac{AUC_{0,\infty,test}}{AUC_{0,\infty,reference}}
+\frac{D_{reference}}{D_{test}}\]</span></td>
+<td align="center"><a href="equations.html#f">10</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(AUMC_{a,b,linear}\)</span></td>
+<td align="center">concentration*time<sup>2</sup></td>
+<td align="center">Area under the first moment of
+the concentration time curve
+from measurement at time <span class="math inline">\(a\)</span>
+to time <span class="math inline">\(b\)</span> using the linear
+trapezoidal rule.</td>
+<td align="center"></td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[AUMC_{t_i,t_{i+1},linear} =
+\frac{1}{2} \left(t_{i+1} -
+t_{i}\right) \left(C_{i+1}
+t_{i+1} + C_i t_i\right)\]</span></td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(AUMC_{a,b,log-linear}\)</span></td>
+<td align="center">concentration*time<sup>2</sup></td>
+<td align="center">Area under the first moment of
+the concentration time curve
+from measurement at time <span class="math inline">\(a\)</span>
+to time <span class="math inline">\(b\)</span> using the
+log-linear trapezoidal rule.</td>
+<td align="center"></td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[AUMC_{t_i,t_{i+1},log-linear}
+=
+\frac{t_{i+1} -
+t_{i}}{ln\left(C_i\right) -
+ln\left(C_{i+1}\right)}
+\left(C_{i+1} \times t_{i+1} +
+C_i \times t_i\right) + \\
+\left(\frac{t_{i+1} -
+t_{i}}{ln\left(C_i\right) -
+ln\left(C_{i+1}\right)}\right)^2
+\left(C_i - C_{i+1}\right)\]</span></td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(AUMC_{0,t}\)</span>, <span class="math inline">\(AUMC_{last}\)</span>,
+<span class="math inline">\(AUMC_{\tau}\)</span></td>
+<td align="center">concentration*time<sup>2</sup></td>
+<td align="center">Area under the first moment of
+the concentration time curve
+during a defined interval
+using only samples above the
+limit of quantification</td>
+<td align="center">AUMCLST, AUMCTAU</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[AUMC_{last} =
+\sum_{t=a}^{t=min(t_{last},
+b)} AUMC_{t_i,t_{i+1}}\]</span></td>
+<td align="center"><a href="equations.html#aumc_0t-aumc_last-aumc_tau">11</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(AUMC_{t_{last}-\infty,obs}\)</span>,
+<span class="math inline">\(AUMC_{t_{last}-\infty,pred}\)</span></td>
+<td align="center">concentration*time<sup>2</sup></td>
+<td align="center">Area under the first moment of
+the concentration-time curve
+from <span class="math inline">\(t_{last}\)</span> to <span class="math inline">\(\infty\)</span></td>
+<td align="center"></td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[\frac{C_{last}
+t_{last}}{\lambda_z} +
+\frac{C_{last}}{\lambda_z^2}\]</span></td>
+<td align="center"><a href="equations.html#aumc_t_last-inftyobs-aumc_t_last-inftypred">12</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(AUMC_{t_{last}-\infty,all}\)</span></td>
+<td align="center">concentration*time<sup>2</sup></td>
+<td align="center">Area under the first moment of
+the concentration-time curve
+from <span class="math inline">\(t_{last}\)</span> to <span class="math inline">\(\infty\)</span> as
+used for <span class="math inline">\(AUC_{all}\)</span>.</td>
+<td align="center"></td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[AUC_{t_{last},t_{last+1},linear}\]</span></td>
+<td align="center"><a href="equations.html#aumc_t_last-inftyall">13</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(AUMC_{0-\infty,obs}\)</span>,
+<span class="math inline">\(AUMC_{0-\infty,pred}\)</span></td>
+<td align="center">concentration*time<sup>2</sup></td>
+<td align="center">Area under the first moment of
+the concentration-time curve
+extrapolated to <span class="math inline">\(\infty\)</span>,
+calculated using the observed
+or predicted value of the last
+non-zero concentration.</td>
+<td align="center">AUMCIFP, AUMCIFO</td>
+<td align="center">TRUE</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[AUMC_{last} +
+AUMC_{t_{last}-\infty}\]</span></td>
+<td align="center"><a href="equations.html#aumc_0-inftyobs-aumc_0-inftypred">14</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(AUMC_{0,all}\)</span></td>
+<td align="center">concentration*time<sup>2</sup></td>
+<td align="center">Area under the first moment of
+the concentration-time curve
+from the time of dosing to the
+time of the last observation,
+regardless of whether the last
+concentration is measurable or
+not.</td>
+<td align="center"></td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[AUMC_{last} +
+AUMC_{t_{last}-\infty,all}\]</span></td>
+<td align="center"><a href="equations.html#aumc_0all">15</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(AUMC_{\%extrap,obs}\)</span>,
+<span class="math inline">\(AUMC_{\%extrap,pred}\)</span></td>
+<td align="center">%</td>
+<td align="center">Area under the first moment of
+the concentration-time curve
+from the last observed
+non-zero concentration value
+to infinity as a percentage of
+the area under the curve
+extrapolated to infinity using
+either the observed or
+predicted <span class="math inline">\(C_{last}\)</span>.</td>
+<td align="center">AUMCPEO, AUMCPEP</td>
+<td align="center">TRUE</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[\frac{AUMC_{t_{last}-\infty}}{AUMC_{0,\infty}}
+\times
+100\]</span></td>
+<td align="center"><a href="equations.html#aumc_extrapobs-aumc_extrappred">16</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(t_{1/2}\)</span></td>
+<td align="center">time</td>
+<td align="center">Terminal half-life</td>
+<td align="center">LAMZHL</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[\frac{ln 2}{\lambda_z}\]</span></td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\lambda_z\)</span></td>
+<td align="center">1/time</td>
+<td align="center">The first order rate constant
+associated with the terminal
+(log-linear) portion of the
+curve.</td>
+<td align="center">LAMZ</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[ln C = A - \lambda_z t\]</span></td>
+<td align="center"><a href="equations.html#lambda_z">17</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(t_{first,\lambda_z}\)</span>,
+<span class="math inline">\(t_{last,\lambda_z}\)</span></td>
+<td align="center">time</td>
+<td align="center">The first and last time (lower
+and upper limit on time) for
+values to be included in the
+calculation of <span class="math inline">\(\lambda_z\)</span>.</td>
+<td align="center">LAMZLL, LAMZUL</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(N_{\lambda_z}\)</span></td>
+<td align="center">count</td>
+<td align="center">The number of time points used
+in computing <span class="math inline">\(\lambda_z\)</span>.</td>
+<td align="center">LAMZNPT</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"></td>
+<td align="center"><a href="equations.html#n_lambda_z">18</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(r^2\)</span></td>
+<td align="center">fraction</td>
+<td align="center">The goodness of fit statistic
+for the terminal elimination
+phase.</td>
+<td align="center">R2</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[1 - \frac{\sum_i \left(C_i -
+\hat{C_i}\right)^2}{\sum_i
+\left(C_i -
+\overline{C_i}\right)^2}\]</span></td>
+<td align="center"><a href="equations.html#r2">19</a></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(r^2_{adj}\)</span></td>
+<td align="center">fraction</td>
+<td align="center">The goodness of fit statistic
+for the terminal elimination
+phase, adjusted for the number
+of time points used in the
+estimation of <span class="math inline">\(\lambda_z\)</span>.</td>
+<td align="center">R2ADJ</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[1 - \left(1 - r^2\right)
+\frac{1}{N_{\lambda_z}-2}\]</span></td>
+<td align="center"><a href="equations.html#r2_adj">20</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(MRT_{ev,last}\)</span>,
+<span class="math inline">\(MRT_{ev,\infty,obs}\)</span>,
+<span class="math inline">\(MRT_{ev,\infty,pred}\)</span>,
+<span class="math inline">\(MRT_{iv,last}\)</span>,
+<span class="math inline">\(MRT_{iv,\infty,obs}\)</span>,
+<span class="math inline">\(MRT_{iv,\infty,pred}\)</span></td>
+<td align="center">time</td>
+<td align="center">Mean residence time (MRT) from
+the time of dosing to the time
+of the last measurable
+concentration or infinity, for
+a substance administered by
+intravascular or extravascular
+dosing.</td>
+<td align="center">MRTEVLST, MRTEVIFO, MRTEVIFP,
+MRTIVLST, MRTIVIFO, MRTIVIFP</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[\frac{AUMC}{AUC}\]</span></td>
+<td align="center"><a href="equations.html#mrt_evlast-mrt_evinftyobs-mrt_evinftypred-mrt_ivlast-mrt_ivinftyobs-mrt_ivinftypred">21</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(MAT_{last}\)</span>,
+<span class="math inline">\(MAT_{\infty,obs}\)</span>,
+<span class="math inline">\(MAT_{\infty,pred}\)</span></td>
+<td align="center">time</td>
+<td align="center">Mean absorption time of a
+substance administered by
+extravascular dosing.</td>
+<td align="center">MAT</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[MRT_{ev} - MRT{iv}\]</span>
+<span class="math display">\[t_{lag} + \frac{1}{K_a}\]</span></td>
+<td align="center"><a href="equations.html#mat_last-mat_inftyobs-mat_inftypred">22</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(PTR\)</span></td>
+<td align="center">ratio</td>
+<td align="center">The maximum concentration
+during a dosing interval
+divided by the concentration
+at the end of the dosing
+interval.</td>
+<td align="center">PTROUGHR</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[\frac{C_{max}}{C_{trough}}\]</span></td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(TPR\)</span></td>
+<td align="center">ratio</td>
+<td align="center">The concentration at the start
+of a dosing interval divided
+by the maximum concentration
+during the dosing interval.</td>
+<td align="center">TROUGHPR</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[\frac{C_{trough}}{C_{max}}\]</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(PTF\)</span></td>
+<td align="center">%</td>
+<td align="center">The difference between Cmin
+and Cmax standardized to Cavg,
+between dose time and <span class="math inline">\(\tau\)</span>.</td>
+<td align="center">FLUCP</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[100 \times \frac{C_{max} -
+C_{min}}{C_{avg}}\]</span></td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(C_{avg}\)</span>, <span class="math inline">\(C_{av}\)</span></td>
+<td align="center">concentration</td>
+<td align="center">Average concentration</td>
+<td align="center">CAVG</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[\frac{AUC_{0,\tau}}{\tau}\]</span></td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(R_{A,AUC}\)</span></td>
+<td align="center">fraction</td>
+<td align="center">The area under the curve at
+steady state divided by the
+area under the curve over the
+initial dosing interval.</td>
+<td align="center">ARAUC</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[R_{A,AUC} =
+\frac{AUC_{\tau,ss}}{AUC_{\tau,sd}}\]</span></td>
+<td align="center"><a href="equations.html#r_aauc">23</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(R_{A,C_{max}}\)</span></td>
+<td align="center">fraction</td>
+<td align="center">The maximum concentration at
+steady state divided by the
+maximum concentration during
+the initial dosing interval.</td>
+<td align="center">ARCMAX</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[R_{A,C_{max}} =
+\frac{C_{max,ss}}{C_{max,sd}}\]</span></td>
+<td align="center"><a href="equations.html#r_ac_max">24</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(R_{A,C_{min}}\)</span></td>
+<td align="center">fraction</td>
+<td align="center">The minimum concentration at
+steady state divided by the
+minimum concentration during
+the initial dosing interval.</td>
+<td align="center">ARCMIN</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[R_{A,C_{min}} =
+\frac{C_{min,ss}}{C_{min,sd}}\]</span></td>
+<td align="center"><a href="equations.html#r_ac_min">25</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(R_{A,C_{trough}}\)</span></td>
+<td align="center">fraction</td>
+<td align="center">The trough concentration at
+steady state divided by the
+trough concentration during
+the initial dosing interval.</td>
+<td align="center">ARCTROUG</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[R_{A,C_{trough}} =
+\frac{C_{trough,ss}}{C_{trough,sd}}\]</span></td>
+<td align="center"><a href="equations.html#r_ac_trough">26</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(CL_{ev,obs}\)</span>, <span class="math inline">\(CL_{ev,pred}\)</span>,
+<span class="math inline">\(CL_{ev,\tau}\)</span>, <span class="math inline">\(CL_{iv,obs}\)</span>,
+<span class="math inline">\(CL_{iv,pred}\)</span>, <span class="math inline">\(CL_{iv,\tau}\)</span></td>
+<td align="center">volume/time</td>
+<td align="center">The total body clearance for
+extravascular or intravascular
+administration (divided by the
+fraction of dose absorbed for
+extravascular), calculated
+using the equivalent <span class="math inline">\(AUC\)</span>.</td>
+<td align="center">CLFO, CLFP, CLFTAU, CLO, CLP,
+CLTAU</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[\frac{F \times D}{AUC}\]</span></td>
+<td align="center"><a href="equations.html#cl_evobs-cl_evpred-cl_evtau-cl_ivobs-cl_ivpred-cl_ivtau">27</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(V_{ss,obs}\)</span>, <span class="math inline">\(V_{ss,pred}\)</span></td>
+<td align="center">volume</td>
+<td align="center">The volume of distribution at
+steady state based on the
+equivalent for a substance
+administered by intravascular
+dosing.</td>
+<td align="center">VSSO, VSSP</td>
+<td align="center">TRUE</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">FALSE</td>
+<td align="center"><span class="math display">\[CL \times MRT\]</span>
+<span class="math display">\[\frac{F \times D \times
+AUMC}{{AUC}^2}\]</span></td>
+<td align="center"><a href="equations.html#v_ssobs-v_sspred">28</a></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(V_{z,ev,obs}\)</span>,
+<span class="math inline">\(V_{z,ev,pred}\)</span>,
+<span class="math inline">\(V_{z,ev,\tau}\)</span>,
+<span class="math inline">\(V_{z,iv,obs}\)</span>,
+<span class="math inline">\(V_{z,iv,pred}\)</span>,
+<span class="math inline">\(V_{z,iv,\tau}\)</span></td>
+<td align="center">volume</td>
+<td align="center">The volume of distribution
+associated with the terminal
+slope following extravascular
+or intravascular
+administration (divided by the
+fraction of dose absorbed for
+extravascular), calculated
+using equivalent <span class="math inline">\(AUC\)</span>.</td>
+<td align="center">VZFO, VZFP, VZFTAU, VZO, VZP,
+VZTAU</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center"><span class="math display">\[\frac{F \times D}{AUC \times
+\lambda_z}\]</span></td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(C_0\)</span></td>
+<td align="center">concentration</td>
+<td align="center">Initial concentration</td>
+<td align="center">C0</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">FALSE</td>
+<td align="center"></td>
+<td align="center"><a href="equations.html#c_0">29</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(V_0\)</span></td>
+<td align="center">volume</td>
+<td align="center">The initial volume of
+distribution for a substance
+administered by bolus
+intravascular dosing.</td>
+<td align="center">V0</td>
+<td align="center">TRUE</td>
+<td align="center">FALSE</td>
+<td align="center">TRUE</td>
+<td align="center">FALSE</td>
+<td align="center"><span class="math display">\[\frac{D}{C_0}\]</span></td>
+<td align="center"></td>
+<td align="center">(, 2013)</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(AUC_{\%backextrap,obs}\)</span>,
+<span class="math inline">\(AUC_{\%backextrap,pred}\)</span></td>
+<td align="center">concentration*time</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">TRUE</td>
+<td align="center">FALSE</td>
+<td align="center"><span class="math display">\[\frac{AUC_{0,first}}{AUC_{0,\infty}}\]</span></td>
+<td align="center"><a href="equations.html#auc_backextrapobs-auc_backextrappred">30</a></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="notes" class="section level2">
+<h2><span class="header-section-number">3.3</span> Notes</h2>
+</div>
+<div id="c_min" class="section level2">
+<h2><span class="header-section-number">3.4</span> <span class="math inline">\(C_{min}\)</span></h2>
+<p>Compare with <span class="math inline">\(C_{trough}\)</span>.</p>
+</div>
+<div id="c_trough" class="section level2">
+<h2><span class="header-section-number">3.5</span> <span class="math inline">\(C_{trough}\)</span></h2>
+<p>Compare with <span class="math inline">\(C_{min}\)</span>.</p>
+</div>
+<div id="c_lastpred" class="section level2">
+<h2><span class="header-section-number">3.6</span> <span class="math inline">\(C_{last,pred}\)</span></h2>
+<p>Parameters in the equation are fit during half-life fitting.</p>
+</div>
+<div id="auc_0t-auc_last-auc_tau" class="section level2">
+<h2><span class="header-section-number">3.7</span> <span class="math inline">\(AUC_{0,t}\)</span>, <span class="math inline">\(AUC_{last}\)</span>, <span class="math inline">\(AUC_{\tau}\)</span></h2>
+<p>Often, the <span class="math inline">\(AUC_{a,b,linear}\)</span> and <span class="math inline">\(AUC_{a,b,log-linear}\)</span> are combined where the linear trapezoidal rule is used for ascending concentrations (<span class="math inline">\(C_{i+1} &gt;= C_i\)</span>) or when the next concentration is below the limit of quantification (<span class="math inline">\(C_{i+1} &gt; 0\)</span>, if applicable), and the log-linear trapezoidal rule is used for descending concentrations <span class="math inline">\(C_{i+1} &lt; C_i\)</span>.</p>
+</div>
+<div id="auc_t_last-inftypred-auc_t_last-inftyobs" class="section level2">
+<h2><span class="header-section-number">3.8</span> <span class="math inline">\(AUC_{t_{last}-\infty,pred}\)</span>, <span class="math inline">\(AUC_{t_{last}-\infty,obs}\)</span></h2>
+<p><span class="math inline">\(C_{last}\)</span> should be <span class="math inline">\(C_{last,pred}\)</span> or <span class="math inline">\(C_{last,obs}\)</span> depending on which version of the parameter is desired.</p>
+</div>
+<div id="auc_t_last-inftyall" class="section level2">
+<h2><span class="header-section-number">3.9</span> <span class="math inline">\(AUC_{t_{last}-\infty,all}\)</span></h2>
+<p><span class="math inline">\(t_{last+1}\)</span> is the first time point below the limit of quantification.</p>
+</div>
+<div id="auc_0-inftypred-auc_0-inftyobs" class="section level2">
+<h2><span class="header-section-number">3.10</span> <span class="math inline">\(AUC_{0-\infty,pred}\)</span>, <span class="math inline">\(AUC_{0-\infty,obs}\)</span></h2>
+<p>Use the ‘pred’ or ‘obs’ version of <span class="math inline">\(AUC_{t_{last}-\infty}\)</span> for the equivalent version of <span class="math inline">\(AUC_{0-\infty}\)</span>.</p>
+</div>
+<div id="auc_0all" class="section level2">
+<h2><span class="header-section-number">3.11</span> <span class="math inline">\(AUC_{0,all}\)</span></h2>
+<p>If all concentrations are above the limit of quantification, then <span class="math inline">\(AUC_{0,all}=AUC_{last}\)</span>.</p>
+</div>
+<div id="auc_extrapobs-auc_extrappred" class="section level2">
+<h2><span class="header-section-number">3.12</span> <span class="math inline">\(AUC_{\%extrap,obs}\)</span>, <span class="math inline">\(AUC_{\%extrap,pred}\)</span></h2>
+<p>Use the ‘pred’ or ‘obs’ version of <span class="math inline">\(AUC_{t_{last},\infty}\)</span> and <span class="math inline">\(AUC_{0,\infty}\)</span> for the equivalent version of <span class="math inline">\(AUC_{\%extrap}\)</span>.</p>
+</div>
+<div id="f" class="section level2">
+<h2><span class="header-section-number">3.13</span> <span class="math inline">\(F\)</span></h2>
+<p>Bioavailability is the ratio of two AUC values. In addition to the comparison of extravascular (<span class="math inline">\(ev\)</span>) to intravascular (<span class="math inline">\(iv\)</span>) for absolute bioavailability, relative bioavailability compares any two <span class="math inline">\(AUC_{0,\infty} values, a &#39;test&#39; to a &#39;reference&#39;\)</span>. In some cases, bioavailability may be tested at steady-state using <span class="math inline">\(AUC_{0,\tau}\)</span> instead of <span class="math inline">\(AUC_{0,\infty}\)</span>.</p>
+</div>
+<div id="aumc_0t-aumc_last-aumc_tau" class="section level2">
+<h2><span class="header-section-number">3.14</span> <span class="math inline">\(AUMC_{0,t}\)</span>, <span class="math inline">\(AUMC_{last}\)</span>, <span class="math inline">\(AUMC_{\tau}\)</span></h2>
+<p>See <span class="math inline">\(AUC_{last}\)</span> notes for suggested calculation options.</p>
+</div>
+<div id="aumc_t_last-inftyobs-aumc_t_last-inftypred" class="section level2">
+<h2><span class="header-section-number">3.15</span> <span class="math inline">\(AUMC_{t_{last}-\infty,obs}\)</span>, <span class="math inline">\(AUMC_{t_{last}-\infty,pred}\)</span></h2>
+<p><span class="math inline">\(C_{last}\)</span> should be <span class="math inline">\(C_{last,pred}\)</span> or <span class="math inline">\(C_{last,obs}\)</span> depending on which version of the parameter is desired.</p>
+</div>
+<div id="aumc_t_last-inftyall" class="section level2">
+<h2><span class="header-section-number">3.16</span> <span class="math inline">\(AUMC_{t_{last}-\infty,all}\)</span></h2>
+<p><span class="math inline">\(t_{last+1}\)</span> is the first time point below the limit of quantification.</p>
+</div>
+<div id="aumc_0-inftyobs-aumc_0-inftypred" class="section level2">
+<h2><span class="header-section-number">3.17</span> <span class="math inline">\(AUMC_{0-\infty,obs}\)</span>, <span class="math inline">\(AUMC_{0-\infty,pred}\)</span></h2>
+<p>Use the ‘obs’ or ‘pred’ version of <span class="math inline">\(AUC_{t_{last}-\infty}\)</span> for the equivalent version of <span class="math inline">\(AUC_{0-\infty}\)</span>.</p>
+</div>
+<div id="aumc_0all" class="section level2">
+<h2><span class="header-section-number">3.18</span> <span class="math inline">\(AUMC_{0,all}\)</span></h2>
+<p>If all concentrations are above the limit of quantification, then <span class="math inline">\(AUMC_{0,all}=AUMC_{last}\)</span>.</p>
+</div>
+<div id="aumc_extrapobs-aumc_extrappred" class="section level2">
+<h2><span class="header-section-number">3.19</span> <span class="math inline">\(AUMC_{\%extrap,obs}\)</span>, <span class="math inline">\(AUMC_{\%extrap,pred}\)</span></h2>
+<p>Use the ‘pred’ or ‘obs’ version of <span class="math inline">\(AUMC_{t_{last}-\infty}\)</span> for the equivalent version of <span class="math inline">\(AUMC_{0-\infty}\)</span>.</p>
+</div>
+<div id="lambda_z" class="section level2">
+<h2><span class="header-section-number">3.20</span> <span class="math inline">\(\lambda_z\)</span></h2>
+<p>Fit the equation using observed concentration (<span class="math inline">\(C\)</span>) and time (<span class="math inline">\(t\)</span>) from the terminal slope of the concentration-time curve. Selection of points for inclusion may be either manual or regression-quality based.</p>
+</div>
+<div id="n_lambda_z" class="section level2">
+<h2><span class="header-section-number">3.21</span> <span class="math inline">\(N_{\lambda_z}\)</span></h2>
+<p><span class="math inline">\(N_{\lambda_z}\)</span> should always be greater than or equal to 3.</p>
+</div>
+<div id="r2" class="section level2">
+<h2><span class="header-section-number">3.22</span> <span class="math inline">\(r^2\)</span></h2>
+<p><span class="math inline">\(r^2\)</span> is typically directly available from line-fitting functions and rarely requires direct calculation. <span class="math inline">\(\overline{C_i}\)</span> is the mean concentration of values used; <span class="math inline">\(\hat{C_i}\)</span> is the estimated concentation.</p>
+</div>
+<div id="r2_adj" class="section level2">
+<h2><span class="header-section-number">3.23</span> <span class="math inline">\(r^2_{adj}\)</span></h2>
+<p>The canonical form of <span class="math inline">\(r^2_{adj}\)</span> has the fraction on the right of the equation as <span class="math inline">\(\frac{p}{n-p-1}\)</span>, but for fitting terminal regression <span class="math inline">\(p=1\)</span>.</p>
+</div>
+<div id="mrt_evlast-mrt_evinftyobs-mrt_evinftypred-mrt_ivlast-mrt_ivinftyobs-mrt_ivinftypred" class="section level2">
+<h2><span class="header-section-number">3.24</span> <span class="math inline">\(MRT_{ev,last}\)</span>, <span class="math inline">\(MRT_{ev,\infty,obs}\)</span>, <span class="math inline">\(MRT_{ev,\infty,pred}\)</span>, <span class="math inline">\(MRT_{iv,last}\)</span>, <span class="math inline">\(MRT_{iv,\infty,obs}\)</span>, <span class="math inline">\(MRT_{iv,\infty,pred}\)</span></h2>
+<p>The equation shown here includes the mean absorption time for extravascular administration aligning with the SDTM definition. The <span class="math inline">\(AUMC\)</span> and <span class="math inline">\(AUC\)</span> should be chosen to match the parameter type desired (e.g. use <span class="math inline">\(AUMC_{last}\)</span> and <span class="math inline">\(AUC_{last}\)</span> for <span class="math inline">\(MRT_{last}\)</span>).</p>
+</div>
+<div id="mat_last-mat_inftyobs-mat_inftypred" class="section level2">
+<h2><span class="header-section-number">3.25</span> <span class="math inline">\(MAT_{last}\)</span>, <span class="math inline">\(MAT_{\infty,obs}\)</span>, <span class="math inline">\(MAT_{\infty,pred}\)</span></h2>
+<p><span class="math inline">\(K_a\)</span> is the absorption rate from multi-exponential compartmental analysis curve fitting (and is not typically applicable for noncompartmental analysis).</p>
+</div>
+<div id="r_aauc" class="section level2">
+<h2><span class="header-section-number">3.26</span> <span class="math inline">\(R_{A,AUC}\)</span></h2>
+<p><span class="math inline">\(ss\)</span> indicates that value is at steady-state while <span class="math inline">\(sd\)</span> indicated that value is from the first (single) dose.</p>
+</div>
+<div id="r_ac_max" class="section level2">
+<h2><span class="header-section-number">3.27</span> <span class="math inline">\(R_{A,C_{max}}\)</span></h2>
+<p><span class="math inline">\(ss\)</span> indicates that value is at steady-state while <span class="math inline">\(sd\)</span> indicated that value is from the first (single) dose.</p>
+</div>
+<div id="r_ac_min" class="section level2">
+<h2><span class="header-section-number">3.28</span> <span class="math inline">\(R_{A,C_{min}}\)</span></h2>
+<p><span class="math inline">\(ss\)</span> indicates that value is at steady-state while <span class="math inline">\(sd\)</span> indicated that value is from the first (single) dose.</p>
+</div>
+<div id="r_ac_trough" class="section level2">
+<h2><span class="header-section-number">3.29</span> <span class="math inline">\(R_{A,C_{trough}}\)</span></h2>
+<p><span class="math inline">\(ss\)</span> indicates that value is at steady-state while <span class="math inline">\(sd\)</span> indicated that value is from the first (single) dose.</p>
+</div>
+<div id="cl_evobs-cl_evpred-cl_evtau-cl_ivobs-cl_ivpred-cl_ivtau" class="section level2">
+<h2><span class="header-section-number">3.30</span> <span class="math inline">\(CL_{ev,obs}\)</span>, <span class="math inline">\(CL_{ev,pred}\)</span>, <span class="math inline">\(CL_{ev,\tau}\)</span>, <span class="math inline">\(CL_{iv,obs}\)</span>, <span class="math inline">\(CL_{iv,pred}\)</span>, <span class="math inline">\(CL_{iv,\tau}\)</span></h2>
+<p>For each of the symbols, select the equivalent <span class="math inline">\(AUC\)</span>. Such as, <span class="math inline">\(CL_{ev,pred}\)</span> uses <span class="math inline">\(AUC = AUC_{0,\infty,pred}\)</span></p>
+</div>
+<div id="v_ssobs-v_sspred" class="section level2">
+<h2><span class="header-section-number">3.31</span> <span class="math inline">\(V_{ss,obs}\)</span>, <span class="math inline">\(V_{ss,pred}\)</span></h2>
+<p>SDTM parameters are specific to intravascular dosing. For each of the symbols, select the equivalent <span class="math inline">\(AUMC\)</span> and <span class="math inline">\(AUC\)</span>. When extravascular dosing is used, it is referred to as the observed or apparent volume of distribution at steady-state. CL and MRT may be given either for single dosing with <span class="math inline">\(AUC_{0,\infty}\)</span> or steady-state with <span class="math inline">\(AUC_{0,\tau}\)</span>.</p>
+</div>
+<div id="c_0" class="section level2">
+<h2><span class="header-section-number">3.32</span> <span class="math inline">\(C_0\)</span></h2>
+<p>IV bolus only. <span class="math inline">\(C_0\)</span> is back-extrapolated from the first two data points after the infusion. See data cleaning rules SDC-4 and MDC-4 for more details on the calculation and cleaning associated with <span class="math inline">\(C_0\)</span>.</p>
+</div>
+<div id="auc_backextrapobs-auc_backextrappred" class="section level2">
+<h2><span class="header-section-number">3.33</span> <span class="math inline">\(AUC_{\%backextrap,obs}\)</span>, <span class="math inline">\(AUC_{\%backextrap,pred}\)</span></h2>
+<p>IV bolus only. <span class="math inline">\(first\)</span> is the first time point after 0, and both <span class="math inline">\(AUC\)</span> values should be calculated with <span class="math inline">\(C_0\)</span> included at time 0.</p>
+</div>
+<div id="references" class="section level2">
+<h2><span class="header-section-number">3.34</span> References</h2>
+<p>[1] <em>Microsoft Word - PK-glossary_ PK_ working_
+group_2004.doc</em>. &lt;URL:
+<a href="http://www.agah.eu/fileadmin/_migrated/content_uploads/PK-glossary_PK_working_group_2004.pdf" class="uri">http://www.agah.eu/fileadmin/_migrated/content_uploads/PK-glossary_PK_working_group_2004.pdf</a>&gt;.
+2013. &lt;URL:
+<a href="http://www.agah.eu/fileadmin/_migrated/content_uploads/PK-glossary_PK_working_group_2004.pdf" class="uri">http://www.agah.eu/fileadmin/_migrated/content_uploads/PK-glossary_PK_working_group_2004.pdf</a>&gt;.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="input-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="test-cases.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": true,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["ncaspecs.pdf", "ncaspecs.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

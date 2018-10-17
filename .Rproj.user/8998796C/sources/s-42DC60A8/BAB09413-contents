@@ -1,0 +1,13 @@
+book_filename: "ncaspecs"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
+rmd_files: ["01-Outline_and_Scope.Rmd", 
+            "02-Input_and_Output_Data.Rmd",
+            "03-NCA_Equations.Rmd",
+            "04-Test_Cases.Rmd",
+            "05-Time_and_Concentration_Deviations.Rmd",
+            "06-Time_and_Concentration_Deviation_Examples.Rmd"]
+output_dir: "../docs"
+before_chapter_script: "_common.R"

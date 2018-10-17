@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539789565571.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1653597485",
+    "id" : "3A71FDF5",
+    "lastKnownWriteTime" : 1539789588,
+    "last_content_update" : 1539789588351,
+    "path" : "~/Repos/pharmsci/ncaspecs/lab-notebook/01-Outline_and_Scope.Rmd",
+    "project_path" : "lab-notebook/01-Outline_and_Scope.Rmd",
+    "properties" : {
+        "cursorPosition" : "19,2",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

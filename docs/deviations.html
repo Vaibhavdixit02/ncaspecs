@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ncaspecs.utf8.md</title>
+  <meta name="description" content="">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="ncaspecs.utf8.md" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="ncaspecs.utf8.md" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="test-cases.html">
+<link rel="next" href="deviation-examples.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="css/adpkd.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">NCA Specification</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#scope"><i class="fa fa-check"></i><b>1.1</b> Scope</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#out-of-scope"><i class="fa fa-check"></i><b>1.2</b> Out of scope</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="input-data.html"><a href="input-data.html"><i class="fa fa-check"></i><b>2</b> Input Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="input-data.html"><a href="input-data.html#sdtm-alignment"><i class="fa fa-check"></i><b>2.1</b> SDTM Alignment</a></li>
+<li class="chapter" data-level="2.2" data-path="input-data.html"><a href="input-data.html#output-data"><i class="fa fa-check"></i><b>2.2</b> Output Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="equations.html"><a href="equations.html"><i class="fa fa-check"></i><b>3</b> Equations</a><ul>
+<li class="chapter" data-level="3.1" data-path="equations.html"><a href="equations.html#defined-parameters"><i class="fa fa-check"></i><b>3.1</b> Defined Parameters</a></li>
+<li class="chapter" data-level="3.2" data-path="equations.html"><a href="equations.html#parameter-table"><i class="fa fa-check"></i><b>3.2</b> Parameter Table</a></li>
+<li class="chapter" data-level="3.3" data-path="equations.html"><a href="equations.html#notes"><i class="fa fa-check"></i><b>3.3</b> Notes</a></li>
+<li class="chapter" data-level="3.4" data-path="equations.html"><a href="equations.html#c_min"><i class="fa fa-check"></i><b>3.4</b> <span class="math inline">\(C_{min}\)</span></a></li>
+<li class="chapter" data-level="3.5" data-path="equations.html"><a href="equations.html#c_trough"><i class="fa fa-check"></i><b>3.5</b> <span class="math inline">\(C_{trough}\)</span></a></li>
+<li class="chapter" data-level="3.6" data-path="equations.html"><a href="equations.html#c_lastpred"><i class="fa fa-check"></i><b>3.6</b> <span class="math inline">\(C_{last,pred}\)</span></a></li>
+<li class="chapter" data-level="3.7" data-path="equations.html"><a href="equations.html#auc_0t-auc_last-auc_tau"><i class="fa fa-check"></i><b>3.7</b> <span class="math inline">\(AUC_{0,t}\)</span>, <span class="math inline">\(AUC_{last}\)</span>, <span class="math inline">\(AUC_{\tau}\)</span></a></li>
+<li class="chapter" data-level="3.8" data-path="equations.html"><a href="equations.html#auc_t_last-inftypred-auc_t_last-inftyobs"><i class="fa fa-check"></i><b>3.8</b> <span class="math inline">\(AUC_{t_{last}-\infty,pred}\)</span>, <span class="math inline">\(AUC_{t_{last}-\infty,obs}\)</span></a></li>
+<li class="chapter" data-level="3.9" data-path="equations.html"><a href="equations.html#auc_t_last-inftyall"><i class="fa fa-check"></i><b>3.9</b> <span class="math inline">\(AUC_{t_{last}-\infty,all}\)</span></a></li>
+<li class="chapter" data-level="3.10" data-path="equations.html"><a href="equations.html#auc_0-inftypred-auc_0-inftyobs"><i class="fa fa-check"></i><b>3.10</b> <span class="math inline">\(AUC_{0-\infty,pred}\)</span>, <span class="math inline">\(AUC_{0-\infty,obs}\)</span></a></li>
+<li class="chapter" data-level="3.11" data-path="equations.html"><a href="equations.html#auc_0all"><i class="fa fa-check"></i><b>3.11</b> <span class="math inline">\(AUC_{0,all}\)</span></a></li>
+<li class="chapter" data-level="3.12" data-path="equations.html"><a href="equations.html#auc_extrapobs-auc_extrappred"><i class="fa fa-check"></i><b>3.12</b> <span class="math inline">\(AUC_{\%extrap,obs}\)</span>, <span class="math inline">\(AUC_{\%extrap,pred}\)</span></a></li>
+<li class="chapter" data-level="3.13" data-path="equations.html"><a href="equations.html#f"><i class="fa fa-check"></i><b>3.13</b> <span class="math inline">\(F\)</span></a></li>
+<li class="chapter" data-level="3.14" data-path="equations.html"><a href="equations.html#aumc_0t-aumc_last-aumc_tau"><i class="fa fa-check"></i><b>3.14</b> <span class="math inline">\(AUMC_{0,t}\)</span>, <span class="math inline">\(AUMC_{last}\)</span>, <span class="math inline">\(AUMC_{\tau}\)</span></a></li>
+<li class="chapter" data-level="3.15" data-path="equations.html"><a href="equations.html#aumc_t_last-inftyobs-aumc_t_last-inftypred"><i class="fa fa-check"></i><b>3.15</b> <span class="math inline">\(AUMC_{t_{last}-\infty,obs}\)</span>, <span class="math inline">\(AUMC_{t_{last}-\infty,pred}\)</span></a></li>
+<li class="chapter" data-level="3.16" data-path="equations.html"><a href="equations.html#aumc_t_last-inftyall"><i class="fa fa-check"></i><b>3.16</b> <span class="math inline">\(AUMC_{t_{last}-\infty,all}\)</span></a></li>
+<li class="chapter" data-level="3.17" data-path="equations.html"><a href="equations.html#aumc_0-inftyobs-aumc_0-inftypred"><i class="fa fa-check"></i><b>3.17</b> <span class="math inline">\(AUMC_{0-\infty,obs}\)</span>, <span class="math inline">\(AUMC_{0-\infty,pred}\)</span></a></li>
+<li class="chapter" data-level="3.18" data-path="equations.html"><a href="equations.html#aumc_0all"><i class="fa fa-check"></i><b>3.18</b> <span class="math inline">\(AUMC_{0,all}\)</span></a></li>
+<li class="chapter" data-level="3.19" data-path="equations.html"><a href="equations.html#aumc_extrapobs-aumc_extrappred"><i class="fa fa-check"></i><b>3.19</b> <span class="math inline">\(AUMC_{\%extrap,obs}\)</span>, <span class="math inline">\(AUMC_{\%extrap,pred}\)</span></a></li>
+<li class="chapter" data-level="3.20" data-path="equations.html"><a href="equations.html#lambda_z"><i class="fa fa-check"></i><b>3.20</b> <span class="math inline">\(\lambda_z\)</span></a></li>
+<li class="chapter" data-level="3.21" data-path="equations.html"><a href="equations.html#n_lambda_z"><i class="fa fa-check"></i><b>3.21</b> <span class="math inline">\(N_{\lambda_z}\)</span></a></li>
+<li class="chapter" data-level="3.22" data-path="equations.html"><a href="equations.html#r2"><i class="fa fa-check"></i><b>3.22</b> <span class="math inline">\(r^2\)</span></a></li>
+<li class="chapter" data-level="3.23" data-path="equations.html"><a href="equations.html#r2_adj"><i class="fa fa-check"></i><b>3.23</b> <span class="math inline">\(r^2_{adj}\)</span></a></li>
+<li class="chapter" data-level="3.24" data-path="equations.html"><a href="equations.html#mrt_evlast-mrt_evinftyobs-mrt_evinftypred-mrt_ivlast-mrt_ivinftyobs-mrt_ivinftypred"><i class="fa fa-check"></i><b>3.24</b> <span class="math inline">\(MRT_{ev,last}\)</span>, <span class="math inline">\(MRT_{ev,\infty,obs}\)</span>, <span class="math inline">\(MRT_{ev,\infty,pred}\)</span>, <span class="math inline">\(MRT_{iv,last}\)</span>, <span class="math inline">\(MRT_{iv,\infty,obs}\)</span>, <span class="math inline">\(MRT_{iv,\infty,pred}\)</span></a></li>
+<li class="chapter" data-level="3.25" data-path="equations.html"><a href="equations.html#mat_last-mat_inftyobs-mat_inftypred"><i class="fa fa-check"></i><b>3.25</b> <span class="math inline">\(MAT_{last}\)</span>, <span class="math inline">\(MAT_{\infty,obs}\)</span>, <span class="math inline">\(MAT_{\infty,pred}\)</span></a></li>
+<li class="chapter" data-level="3.26" data-path="equations.html"><a href="equations.html#r_aauc"><i class="fa fa-check"></i><b>3.26</b> <span class="math inline">\(R_{A,AUC}\)</span></a></li>
+<li class="chapter" data-level="3.27" data-path="equations.html"><a href="equations.html#r_ac_max"><i class="fa fa-check"></i><b>3.27</b> <span class="math inline">\(R_{A,C_{max}}\)</span></a></li>
+<li class="chapter" data-level="3.28" data-path="equations.html"><a href="equations.html#r_ac_min"><i class="fa fa-check"></i><b>3.28</b> <span class="math inline">\(R_{A,C_{min}}\)</span></a></li>
+<li class="chapter" data-level="3.29" data-path="equations.html"><a href="equations.html#r_ac_trough"><i class="fa fa-check"></i><b>3.29</b> <span class="math inline">\(R_{A,C_{trough}}\)</span></a></li>
+<li class="chapter" data-level="3.30" data-path="equations.html"><a href="equations.html#cl_evobs-cl_evpred-cl_evtau-cl_ivobs-cl_ivpred-cl_ivtau"><i class="fa fa-check"></i><b>3.30</b> <span class="math inline">\(CL_{ev,obs}\)</span>, <span class="math inline">\(CL_{ev,pred}\)</span>, <span class="math inline">\(CL_{ev,\tau}\)</span>, <span class="math inline">\(CL_{iv,obs}\)</span>, <span class="math inline">\(CL_{iv,pred}\)</span>, <span class="math inline">\(CL_{iv,\tau}\)</span></a></li>
+<li class="chapter" data-level="3.31" data-path="equations.html"><a href="equations.html#v_ssobs-v_sspred"><i class="fa fa-check"></i><b>3.31</b> <span class="math inline">\(V_{ss,obs}\)</span>, <span class="math inline">\(V_{ss,pred}\)</span></a></li>
+<li class="chapter" data-level="3.32" data-path="equations.html"><a href="equations.html#c_0"><i class="fa fa-check"></i><b>3.32</b> <span class="math inline">\(C_0\)</span></a></li>
+<li class="chapter" data-level="3.33" data-path="equations.html"><a href="equations.html#auc_backextrapobs-auc_backextrappred"><i class="fa fa-check"></i><b>3.33</b> <span class="math inline">\(AUC_{\%backextrap,obs}\)</span>, <span class="math inline">\(AUC_{\%backextrap,pred}\)</span></a></li>
+<li class="chapter" data-level="3.34" data-path="equations.html"><a href="equations.html#references"><i class="fa fa-check"></i><b>3.34</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="test-cases.html"><a href="test-cases.html"><i class="fa fa-check"></i><b>4</b> Test Cases</a><ul>
+<li class="chapter" data-level="4.1" data-path="test-cases.html"><a href="test-cases.html#introduction-1"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="test-cases.html"><a href="test-cases.html#examples"><i class="fa fa-check"></i><b>4.2</b> Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="deviations.html"><a href="deviations.html"><i class="fa fa-check"></i><b>5</b> Deviations</a><ul>
+<li class="chapter" data-level="5.1" data-path="deviations.html"><a href="deviations.html#introduction-2"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
+<li class="chapter" data-level="5.2" data-path="deviations.html"><a href="deviations.html#limit-of-quantification-modifications"><i class="fa fa-check"></i><b>5.2</b> Limit of Quantification Modifications</a></li>
+<li class="chapter" data-level="5.3" data-path="deviations.html"><a href="deviations.html#time-deviation-correction-rules"><i class="fa fa-check"></i><b>5.3</b> Time Deviation Correction Rules</a></li>
+<li class="chapter" data-level="5.4" data-path="deviations.html"><a href="deviations.html#concentration-deviation-correction-rules"><i class="fa fa-check"></i><b>5.4</b> Concentration Deviation Correction Rules</a></li>
+<li class="chapter" data-level="5.5" data-path="deviations.html"><a href="deviations.html#interpolation"><i class="fa fa-check"></i><b>5.5</b> Interpolation</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="deviations.html"><a href="deviations.html#zero-interpolation"><i class="fa fa-check"></i><b>5.5.1</b> Zero Interpolation</a></li>
+<li class="chapter" data-level="5.5.2" data-path="deviations.html"><a href="deviations.html#linear-interpolation"><i class="fa fa-check"></i><b>5.5.2</b> Linear Interpolation</a></li>
+<li class="chapter" data-level="5.5.3" data-path="deviations.html"><a href="deviations.html#log-linear-interpolation"><i class="fa fa-check"></i><b>5.5.3</b> Log-Linear Interpolation</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="deviations.html"><a href="deviations.html#extrapolation"><i class="fa fa-check"></i><b>5.6</b> Extrapolation</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="deviation-examples.html"><a href="deviation-examples.html"><i class="fa fa-check"></i><b>6</b> Deviation Examples</a></li>
+<li class="chapter" data-level="7" data-path="sdt.html"><a href="sdt.html"><i class="fa fa-check"></i><b>7</b> SDT</a><ul>
+<li class="chapter" data-level="7.1" data-path="sdt.html"><a href="sdt.html#sdt-1"><i class="fa fa-check"></i><b>7.1</b> SDT-1</a></li>
+<li class="chapter" data-level="7.2" data-path="sdt.html"><a href="sdt.html#sdt-2"><i class="fa fa-check"></i><b>7.2</b> SDT-2</a></li>
+<li class="chapter" data-level="7.3" data-path="sdt.html"><a href="sdt.html#sdt-3"><i class="fa fa-check"></i><b>7.3</b> SDT-3</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="mdt.html"><a href="mdt.html"><i class="fa fa-check"></i><b>8</b> MDT</a><ul>
+<li class="chapter" data-level="8.1" data-path="mdt.html"><a href="mdt.html#mdt-1"><i class="fa fa-check"></i><b>8.1</b> MDT-1</a></li>
+<li class="chapter" data-level="8.2" data-path="mdt.html"><a href="mdt.html#mdt-2"><i class="fa fa-check"></i><b>8.2</b> MDT-2</a></li>
+<li class="chapter" data-level="8.3" data-path="mdt.html"><a href="mdt.html#mdt-3"><i class="fa fa-check"></i><b>8.3</b> MDT-3</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="sdc.html"><a href="sdc.html"><i class="fa fa-check"></i><b>9</b> SDC</a><ul>
+<li class="chapter" data-level="9.1" data-path="sdc.html"><a href="sdc.html#sdc-1"><i class="fa fa-check"></i><b>9.1</b> SDC-1</a></li>
+<li class="chapter" data-level="9.2" data-path="sdc.html"><a href="sdc.html#sdc-2"><i class="fa fa-check"></i><b>9.2</b> SDC-2</a></li>
+<li class="chapter" data-level="9.3" data-path="sdc.html"><a href="sdc.html#sdc-3"><i class="fa fa-check"></i><b>9.3</b> SDC-3</a></li>
+<li class="chapter" data-level="9.4" data-path="sdc.html"><a href="sdc.html#sdc-4a"><i class="fa fa-check"></i><b>9.4</b> SDC-4a</a></li>
+<li class="chapter" data-level="9.5" data-path="sdc.html"><a href="sdc.html#sdc-4b"><i class="fa fa-check"></i><b>9.5</b> SDC-4b</a></li>
+<li class="chapter" data-level="9.6" data-path="sdc.html"><a href="sdc.html#sdc-4c"><i class="fa fa-check"></i><b>9.6</b> SDC-4c</a></li>
+<li class="chapter" data-level="9.7" data-path="sdc.html"><a href="sdc.html#sdc-4d"><i class="fa fa-check"></i><b>9.7</b> SDC-4d</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="mdc.html"><a href="mdc.html"><i class="fa fa-check"></i><b>10</b> MDC</a><ul>
+<li class="chapter" data-level="10.1" data-path="mdc.html"><a href="mdc.html#mdc-1"><i class="fa fa-check"></i><b>10.1</b> MDC-1</a></li>
+<li class="chapter" data-level="10.2" data-path="mdc.html"><a href="mdc.html#mdc-2"><i class="fa fa-check"></i><b>10.2</b> MDC-2</a></li>
+<li class="chapter" data-level="10.3" data-path="mdc.html"><a href="mdc.html#mdc-3"><i class="fa fa-check"></i><b>10.3</b> MDC-3</a></li>
+<li class="chapter" data-level="10.4" data-path="mdc.html"><a href="mdc.html#mdc-4a"><i class="fa fa-check"></i><b>10.4</b> MDC-4a</a></li>
+<li class="chapter" data-level="10.5" data-path="mdc.html"><a href="mdc.html#mdc-4b"><i class="fa fa-check"></i><b>10.5</b> MDC-4b</a></li>
+<li class="chapter" data-level="10.6" data-path="mdc.html"><a href="mdc.html#mdc-4c"><i class="fa fa-check"></i><b>10.6</b> MDC-4c</a></li>
+<li class="chapter" data-level="10.7" data-path="mdc.html"><a href="mdc.html#mdc-4d"><i class="fa fa-check"></i><b>10.7</b> MDC-4d</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="session-information.html"><a href="session-information.html"><i class="fa fa-check"></i><b>11</b> Session Information</a></li>
+<li class="divider"></li>
+<li><a href="https://vjd.github.io/ncaspecs/" target="blank">NCA Specification</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="deviations" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Deviations</h1>
+<div id="introduction-2" class="section level2">
+<h2><span class="header-section-number">5.1</span> Introduction</h2>
+<p>Time and concentration deviations may require correction prior to completing final NCA calculations. This section describes methods used for corrections and the associated calculations to be performed prior to final calculations.</p>
+</div>
+<div id="limit-of-quantification-modifications" class="section level2">
+<h2><span class="header-section-number">5.2</span> Limit of Quantification Modifications</h2>
+<p>At least one of the following rules must be implemented for handling concentrations below the limit of quantification (BLOQ). Different rules may be implemented for</p>
+<ul>
+<li>the predose concentration measurement,</li>
+<li>concentrations before the first concentration above the LOQ,</li>
+<li>BLOQ concentrations between the concentrations above the LOQ, and</li>
+<li>after the last concentration above the LOQ.</li>
+</ul>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="42%" />
+<col width="30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Rule Number</th>
+<th>Short description</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>LOQ-1</td>
+<td>Exclude</td>
+<td>Exclude any BLOQ value. (LOQ-1 is the typical default.)</td>
+</tr>
+<tr class="even">
+<td>LOQ-2</td>
+<td>Set 0</td>
+<td>Set BLOQ values to 0.</td>
+</tr>
+<tr class="odd">
+<td>LOQ-3</td>
+<td>Set half-LOQ then exclude</td>
+<td>Set first BLOQ value to <span class="math inline">\(0.5 \times LOQ\)</span>, exclude subsequent BLOQ values.</td>
+</tr>
+<tr class="even">
+<td>LOQ-4</td>
+<td>Set half-LOQ then 0</td>
+<td>Set first BLOQ value to <span class="math inline">\(0.5 \times LOQ\)</span>, set subsequent BLOQ values to 0.</td>
+</tr>
+<tr class="odd">
+<td>LOQ-5</td>
+<td>Set half-LOQ</td>
+<td>Set BLOQ values to <span class="math inline">\(0.5 \times LOQ\)</span>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="time-deviation-correction-rules" class="section level2">
+<h2><span class="header-section-number">5.3</span> Time Deviation Correction Rules</h2>
+<p>The time deviation correction rules have to be applied in cases where the actual sampling time deviates from the nominal time at t=0 (all AUCs), t=t_upper (AUCINT) and/or t=TAU (AUCTAU).</p>
+<table>
+<colgroup>
+<col width="36%" />
+<col width="22%" />
+<col width="22%" />
+<col width="18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>DOSING</th>
+<th>RULE NUMBER</th>
+<th>DESCRIPTION</th>
+<th>PARAMETER</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Single Dose (SD)</td>
+<td>SDT-1</td>
+<td>set actual time to 0</td>
+<td>t0</td>
+</tr>
+<tr class="even">
+<td>Single Dose (SD)</td>
+<td>SDT-2</td>
+<td>correct concentration at deviating time by interpolation</td>
+<td>t_upper</td>
+</tr>
+<tr class="odd">
+<td>Single Dose (SD)</td>
+<td>SDT-3</td>
+<td>correct concentration at deviating time by extrapolation</td>
+<td>t_upper</td>
+</tr>
+<tr class="even">
+<td>Multiple Dose (MD)</td>
+<td>MDT-1</td>
+<td>at predose, if sample taken after dosing, add a row t=0 and c=NA</td>
+<td>t0</td>
+</tr>
+<tr class="odd">
+<td>Multiple Dose (MD)</td>
+<td>MDT-2</td>
+<td>correct concentration at deviating time by interpolation</td>
+<td>t_upper, tau</td>
+</tr>
+<tr class="even">
+<td>Multiple Dose (MD)</td>
+<td>MDT-3</td>
+<td>correct concentration at deviating time by extrapolation</td>
+<td>t0, t_upper, tau</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="concentration-deviation-correction-rules" class="section level2">
+<h2><span class="header-section-number">5.4</span> Concentration Deviation Correction Rules</h2>
+<p>Concentration substitution rules have to be applied where the concentration is missing at t=0 (all AUCs), t=t_upper (AUCINT) and/or t=TAU (AUCTAU).</p>
+<table>
+<colgroup>
+<col width="36%" />
+<col width="22%" />
+<col width="22%" />
+<col width="18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>DOSING</th>
+<th>RULE NUMBER</th>
+<th>DESCRIPTION</th>
+<th>PARAMETER</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Single Dose (SD)</td>
+<td>SDC-1</td>
+<td>set concentration to 0 (only for non-endogenous compounds)</td>
+<td>t0</td>
+</tr>
+<tr class="even">
+<td>Single Dose (SD)</td>
+<td>SDC-2</td>
+<td>impute missing concentration by interpolation</td>
+<td>t_upper, TAU</td>
+</tr>
+<tr class="odd">
+<td>Single Dose (SD)</td>
+<td>SDC-3</td>
+<td>impute missing concentration by extrapolation</td>
+<td>t_upper, TAU</td>
+</tr>
+<tr class="even">
+<td>Single Dose (SD)</td>
+<td>SDC-4</td>
+<td>Bolus IV: impute concentration at C0 by back-extrapolation using the first two observations. If the resulting slope is positive or one of both concentrations is LOQ or NA, the first non-zero concentration is used as C0.</td>
+<td>t0</td>
+</tr>
+<tr class="odd">
+<td>Multiple Dose (MD)</td>
+<td>MDC-1</td>
+<td>impute missing conc. by existing conc. at t0 or TAU (only if steady state has been reached)</td>
+<td>t0, TAU</td>
+</tr>
+<tr class="even">
+<td>Multiple Dose (MD)</td>
+<td>MDC-2</td>
+<td>impute missing concentration by interpolation</td>
+<td>t_upper, TAU</td>
+</tr>
+<tr class="odd">
+<td>Multiple Dose (MD)</td>
+<td>MDC-3</td>
+<td>impute missing concentration by extrapolation</td>
+<td>t_upper, TAU</td>
+</tr>
+<tr class="even">
+<td>Multiple Dose (MD)</td>
+<td>MDC-4</td>
+<td>Bolus IV: impute concentration at C0 by back-extrapolation using the first two observations. If the resulting slope is positive or one of both concentrations is LOQ or NA, the first non-zero concentration is used as C0</td>
+<td>t0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="interpolation" class="section level2">
+<h2><span class="header-section-number">5.5</span> Interpolation</h2>
+<p>To obtain a concentration (<span class="math inline">\(C_i\)</span>) at time i (<span class="math inline">\(t_i\)</span>), lying between the times <span class="math inline">\(t_a\)</span> and <span class="math inline">\(t_b\)</span> with concentrations <span class="math inline">\(C_a\)</span> and <span class="math inline">\(C_b\)</span> respectively, and no dose occurring between <span class="math inline">\(t_a\)</span> and <span class="math inline">\(t_b\)</span> interpolation will be carried out. Multiple methods of interpolation are possible, and the method of interpolation should align with the method for calculation of area under the concentration-time curve (AUC).</p>
+<div id="zero-interpolation" class="section level3">
+<h3><span class="header-section-number">5.5.1</span> Zero Interpolation</h3>
+<p>If <span class="math inline">\(C_a\)</span> and <span class="math inline">\(C_b\)</span> are BLOQ, <span class="math inline">\(C_i\)</span> should be set to BLOQ.</p>
+</div>
+<div id="linear-interpolation" class="section level3">
+<h3><span class="header-section-number">5.5.2</span> Linear Interpolation</h3>
+<p>If linear AUC integration is used in the interval between <span class="math inline">\(t_a\)</span> and <span class="math inline">\(t_b\)</span> (trapezoidal rule AUC calculation or linear-up/log-down AUC with <span class="math inline">\(C_b \geq C_a\)</span>), the following formula should be used.</p>
+<p><span class="math display">\[C_i = C_a + \left(C_b-C_a\right)\frac{t_i-t_a}{t_b-t_a}\]</span></p>
+</div>
+<div id="log-linear-interpolation" class="section level3">
+<h3><span class="header-section-number">5.5.3</span> Log-Linear Interpolation</h3>
+<p>If log-linear AUC integration is used in the interval between <span class="math inline">\(t_a\)</span> and <span class="math inline">\(t_b\)</span> (linear-up/log-down AUC with <span class="math inline">\(C_b &lt; C_a\)</span>), the following formula should be used.
+<span class="math display">\[C_i = exp\left( log\left(C_a\right) + \left(log\left(C_b\right) - log\left(C_a\right)\right) \frac{t_i - t_a}{t_b - t_a} \right)\]</span></p>
+</div>
+</div>
+<div id="extrapolation" class="section level2">
+<h2><span class="header-section-number">5.6</span> Extrapolation</h2>
+<p>To extrapolate a concentration <span class="math inline">\(C_i\)</span> at time <span class="math inline">\(t_i\)</span> lying after a time <span class="math inline">\(t_a\)</span> with measurable concentration <span class="math inline">\(C_a\)</span> and no dose occurring between <span class="math inline">\(t_a\)</span> and <span class="math inline">\(t_i\)</span>, the following formula should be used.
+<span class="math display">\[C_i = C_a exp\left(-\lambda_z \times \left(t_i - t_a\right)\right)\]</span></p>
+<p>where <span class="math inline">\(\lambda_z\)</span> is the elimination rate constant and it must be positive. It is calculated during calculation of the half-life (<span class="math inline">\(t_{1/2}\)</span>), and is calculable from half-life as <span class="math inline">\(\lambda_z=\frac{log_e(2)}{t_{1/2}}\)</span>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="test-cases.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="deviation-examples.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": true,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["ncaspecs.pdf", "ncaspecs.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

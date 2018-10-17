@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539789650585.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2973825839",
+    "id" : "D5778A2D",
+    "lastKnownWriteTime" : 1539789657,
+    "last_content_update" : 1539789657571,
+    "path" : "~/Repos/pharmsci/ncaspecs/lab-notebook/04-Test_Cases.Rmd",
+    "project_path" : "lab-notebook/04-Test_Cases.Rmd",
+    "properties" : {
+        "cursorPosition" : "10,2",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
